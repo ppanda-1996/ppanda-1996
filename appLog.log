@@ -71,3 +71,45 @@
 2022-04-20 10:09:05 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-04-20 10:09:05 - HikariPool-1 - Shutdown initiated...
 2022-04-20 10:09:05 - HikariPool-1 - Shutdown completed.
+2022-04-20 10:56:21 - Starting RolebasedManagementApplication using Java 1.8.0_322 on intuitdep81456 with PID 41976 (/Users/ppanda2/Downloads/rolebasedManagement/target/classes started by ppanda2 in /Users/ppanda2/Downloads/rolebasedManagement)
+2022-04-20 10:56:21 - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 10:56:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-20 10:56:21 - Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2022-04-20 10:56:21 - Tomcat initialized with port(s): 8080 (http)
+2022-04-20 10:56:21 - Starting service [Tomcat]
+2022-04-20 10:56:21 - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-20 10:56:21 - Initializing Spring embedded WebApplicationContext
+2022-04-20 10:56:21 - Root WebApplicationContext: initialization completed in 178 ms
+2022-04-20 10:56:21 - HikariPool-97 - Starting...
+2022-04-20 10:56:21 - HikariPool-97 - Start completed.
+2022-04-20 10:56:21 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/task'
+2022-04-20 10:56:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-20 10:56:21 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2022-04-20 10:56:21 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-20 10:56:21 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-20 10:56:21 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-20 10:56:21 - LiveReload server is running on port 35729
+2022-04-20 10:56:21 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-20 10:56:21 - Started RolebasedManagementApplication in 3.817 seconds (JVM running for 52220.494)
+2022-04-20 10:56:21 - Condition evaluation unchanged
+2022-04-20 10:56:24 - Starting RolebasedManagementApplicationTests using Java 1.8.0_322 on intuitdep81456 with PID 40732 (started by ppanda2 in /Users/ppanda2/Downloads/rolebasedManagement)
+2022-04-20 10:56:24 - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 10:56:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-20 10:56:25 - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2022-04-20 10:56:25 - HikariPool-1 - Starting...
+2022-04-20 10:56:26 - HikariPool-1 - Start completed.
+2022-04-20 10:56:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-20 10:56:26 - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-20 10:56:26 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-20 10:56:26 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+2022-04-20 10:56:27 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-20 10:56:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-20 10:56:27 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-20 10:56:28 - Started RolebasedManagementApplicationTests in 4.464 seconds (JVM running for 7.298)
+2022-04-20 10:56:28 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-04-20 10:56:28 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5ca11721, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@66c109fa, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@c3996c6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1f7a0f52, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4b361b83, org.springframework.test.context.support.DirtiesContextTestExecutionListener@255655c6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6519780c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a56fb62, org.springframework.test.context.event.EventPublishingTestExecutionListener@51c707a8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@46a88033, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@685f49f2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@75cf2270, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1cdc9126, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1e773396, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@cf5e973]
+2022-04-20 10:56:28 - Adding action to the db
+2022-04-20 10:56:28 - Getting all the Action list
+2022-04-20 10:56:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-20 10:56:28 - HikariPool-1 - Shutdown initiated...
+2022-04-20 10:56:28 - HikariPool-1 - Shutdown completed.
