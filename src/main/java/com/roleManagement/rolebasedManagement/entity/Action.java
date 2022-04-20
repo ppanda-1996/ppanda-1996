@@ -2,6 +2,8 @@ package com.roleManagement.rolebasedManagement.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.util.Objects;
 
 @Builder
@@ -13,12 +15,11 @@ import java.util.Objects;
 @Table(name = "action")
 public class Action {
     @Id
-    @Column(name = "action_id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "action_name", nullable = false, length = 50)
+    @NotNull
+    @Pattern(regexp = "^[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}$")
     private String actionName;
-    @Column(name = "action_desc", nullable = false, length = 50)
     private String actionDesc;
     @Override
     public String toString() {
@@ -43,7 +44,6 @@ public class Action {
     }
 
     public Action(String actionName, String actionDesc) {
-        this.id = id;
         this.actionName = actionName;
         this.actionDesc = actionDesc;
     }

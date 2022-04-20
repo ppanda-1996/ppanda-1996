@@ -8,7 +8,6 @@ import com.roleManagement.rolebasedManagement.repository.ActionRepository;
 import com.roleManagement.rolebasedManagement.repository.PermissionRepository;
 import com.roleManagement.rolebasedManagement.repository.ResourceRepository;
 import com.roleManagement.rolebasedManagement.service.PermissionService;
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,13 +34,7 @@ public class PermissionControllerTest {
     private PermissionService permissionService;
     @Autowired
     PermissionController permissionController;
-    @Test
-    public void simple(){
-        when(permissionService.listAllPermission()).thenReturn(null);
-        List<Permission> permission =permissionController.getAllPermission();
-        Assert.assertEquals(null,permission);
 
-    }
     @Test
     public void simple2(){
         Permission p1= new Permission("Aws.Read");

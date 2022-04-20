@@ -2,8 +2,6 @@ package com.roleManagement.rolebasedManagement;
 
 import com.roleManagement.rolebasedManagement.controller.ActionController;
 import com.roleManagement.rolebasedManagement.entity.Action;
-import com.roleManagement.rolebasedManagement.entity.Permission;
-import com.roleManagement.rolebasedManagement.pojo.PermissionRequest;
 import com.roleManagement.rolebasedManagement.repository.ActionRepository;
 import com.roleManagement.rolebasedManagement.service.ActionService;
 import org.junit.jupiter.api.Test;
@@ -12,9 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
