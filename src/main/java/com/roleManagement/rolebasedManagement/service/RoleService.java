@@ -21,7 +21,10 @@ class RoleService {
     Logger logger= LoggerFactory.getLogger(RoleService.class);
     public List<Role> listAllRole() {
         logger.info("Getting all all role : " + roleRepository.count());
-        return roleRepository.findAll();
+        List<Role>roles=roleRepository.findAll();
+        return roles;
+
+
     }
     public Role saveRole(RoleRequest roleRequest) {
             Role role = new Role();

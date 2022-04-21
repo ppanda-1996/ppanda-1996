@@ -17,8 +17,8 @@ public class Action {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @NotNull
-    @Pattern(regexp = "^[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}$")
+//   @Pattern(regexp = "^[A-Z]\\d[a-z]$",message = "Enter valid Action name")
+    @NotNull(message = "Name is mandatory")
     private String actionName;
     private String actionDesc;
     @Override

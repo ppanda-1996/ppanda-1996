@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 public interface ActionRepository extends JpaRepository<Action, Integer> {
 
      Action findByActionName(String actionName);
+     Boolean existsByActionName(String actionName);
+
 
 
 

@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,6 +24,7 @@ public class Permission {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "permission_name", nullable = false, length = 50)
+    @Pattern(regexp = "^[A-Z]\\d[a-z]$",message = "Enter valid permission name")
     private String permissionName;
 
     public Permission(String permissionName) {
