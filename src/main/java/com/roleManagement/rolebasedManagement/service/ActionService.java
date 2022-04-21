@@ -14,8 +14,8 @@ public class ActionService {
     Logger logger=  LoggerFactory.getLogger(ActionService.class);
     public List<Action>listAllAction() {
         logger.info("total action number is: " + actionRepository.count());
-        return  actionRepository.findAll();
-
+        List<Action> actions=actionRepository.findAll();
+            return actions;
         }
 
     public Action saveAction(Action action){
