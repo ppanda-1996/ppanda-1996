@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,6 +22,8 @@ public class Role {
     public Integer id;
 
     @Column(name = "role_name", nullable = false, length = 50)
+//   @Pattern(regexp = "^[A-Z]\\d[a-z]$",message = "Enter valid Role name")
+    @NotNull(message = "Name is mandatory")
     public String roleName;
     @JsonIgnore
     @ManyToMany(fetch=FetchType.EAGER)

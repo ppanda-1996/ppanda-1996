@@ -1,6 +1,8 @@
 package com.roleManagement.rolebasedManagement.entity;
 import lombok.*;
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.util.Objects;
 
 @Builder
@@ -16,7 +18,8 @@ public class Resource {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "resource_name", nullable = false, length = 50)
+//    @Pattern(regexp = "^[A-Z]\\d[a-z]$",message = "Enter valid Resource name")
+    @NotNull(message = "Name is mandatory")
     private String resourceName;
     @Column(name = "resource_desc", nullable = false, length = 50)
     private String resourceDesc;
