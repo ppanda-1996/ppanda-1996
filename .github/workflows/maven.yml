@@ -10,13 +10,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: 
-    -master
-    -'feature/*'
+    branches: ["master"]
   pull_request:
-    branches: 
-    -master
-    -'feature/*'
+    branches: ["master"]
 
 jobs:
   build:
